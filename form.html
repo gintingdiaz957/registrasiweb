@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="id">
+<head>  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Registrasi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    .container {
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 20px;
+      max-width: 400px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, textarea, select, button {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+    }
+    button {
+      width: 48%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Form Registrasi</h2>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="confirm-password">Konfirmasi Password:</label>
+      <input type="password" id="confirm-password" name="confirm-password" required>
+
+      <label for="nama">Nama Lengkap:</label>
+      <input type="text" id="nama" name="nama" required>
+
+      <label for="deskripsi">Deskripsi Diri:</label>
+      <textarea id="deskripsi" name="deskripsi" rows="4"></textarea>
+
+      <label>Jenis Kelamin:</label>
+      <input type="radio" id="pria" name="gender" value="Pria"> <label for="pria">Pria</label>
+      <input type="radio" id="wanita" name="gender" value="Perempuan"> <label for="wanita">Perempuan</label>
+
+      <label>Hobi:</label>
+      <input type="checkbox" id="hobi1" name="hobi" value="Olahraga"> <label for="hobi1">Olahraga</label><br>
+      <input type="checkbox" id="hobi2" name="hobi" value="Travelling"> <label for="hobi2">Travelling</label><br>
+      <input type="checkbox" id="hobi3" name="hobi" value="Kesehatan"> <label for="hobi3">Kesehatan</label>
+
+      <label for="pendidikan">Pendidikan Terakhir:</label>
+      <select id="pendidikan" name="pendidikan" required>
+        <option value="">-- Pilih Pendidikan --</option>
+        <option value="SMA">SMA/SMK</option>
+        <option value="D3">Diploma (D3)</option>
+        <option value="S1">Sarjana (S1)</option>
+        <option value="S2">Magister (S2)</option>
+        <option value="S3">Doktor (S3)</option>
+      </select>
+
+      <div class="buttons">
+        <button type="submit">Daftar</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
+</body>
+</html>
